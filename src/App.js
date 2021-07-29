@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Sieve from './components/seive/seive';
+import BubbleSort from './components/sorting/bubblesort';
+import QuickSort from './components/sorting/quicksort';
+import MergeSort from './components/sorting/merge-sort';
+import Homepage from './components/button/homepage/homepage';
+import {Switch,Route,Redirect,withRouter,BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Homepage/>
+  <Switch>
+  <Route exact path="/" component={MergeSort}/>
+    <Route path="/math/sieve" component={Sieve}/>
+    <Route path="/sort/mergesort" component={MergeSort}/>
+    <Route path="/sort/quicksort" component={QuickSort}/>
+    <Route path="/sort/bubblesort" component={BubbleSort}/>
+  </Switch>
+  </>
   );
 }
 

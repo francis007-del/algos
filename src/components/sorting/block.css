@@ -1,0 +1,8 @@
+.block{
+    background-color: steelblue;
+    outline: 1px rgb(115, 153, 209);
+    height: 20px;
+    width: 15px;
+    border-radius:2px;
+    margin: 1px;
+}
