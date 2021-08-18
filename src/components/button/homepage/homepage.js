@@ -16,6 +16,11 @@ return(
           alert("I need help... and coffee...");
         }}
         menuItems={[
+          {
+            title:"Home",
+            isAuth: true,
+            onClick:()=>history.push('/')
+          },
             {
                 title: "Math",
                 isAuth: true,
@@ -47,6 +52,25 @@ return(
                         onClick:()=>history.push('/sort/quicksort')
                     }
                   ]
+              },
+              {
+                title:"Graphs",
+                isAuth:true,
+                subItems:[
+                    {title:"BFS",
+                          isAuth:true,
+                          onClick:()=>history.push('/graphs/bfs')},
+                          {
+                            title:"DFS",
+                            isAuth:true,
+                            onClick:()=>history.push('/graphs/dfs')
+                          },
+                          {
+                            title:"Dijkstras",
+                            isAuth:true,
+                            onClick:()=>history.push('/graphs/dijkstras')
+                          }
+                ]
               }
               
         ]}

@@ -3,7 +3,7 @@ import './block.css';
 const Block=({height,isSorted,isSorting})=>{
     const getColor=()=>{
         if( isSorted ){
-            return "green";
+            return "rgb(22, 165, 150)";
         } else if( isSorting ){
             return "red";
         } else{
@@ -12,7 +12,7 @@ const Block=({height,isSorted,isSorting})=>{
     }
     return(
         <div className='block'
-        style={{height:height,backgroundColor:getColor(),margin:2}}>
+        style={{height:height,backgroundColor:getColor(),margin:1}}>
         </div>
     );
     }
