@@ -77,8 +77,9 @@ const Sieve=()=>{
                 visualize={sevie}
                 />
                 <div className='underline'></div>
+                <div className='cells' style={{margin:25}}>
                <Cells cells={cells}/>
-               
+               </div>
                  
             </div>
         );

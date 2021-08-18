@@ -20,7 +20,7 @@
                   orientation='horizontal'
                   value={number}
                   min={0}
-                  max={130}
+                  max={500}
                   onChange={changeNumber}
                   />
               </div>

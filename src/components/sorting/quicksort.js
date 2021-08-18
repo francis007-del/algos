@@ -3,7 +3,7 @@ import Blocks from './rectangles';
 import Menu from './menu';
 import Sort from './quicksort-algo';
 const QuickSort=()=>{
-    const [number,setNumber]=useState(60);
+    const [number,setNumber]=useState(100);
     const [blocks,setBlocks]=useState([]);
     const [speed,setSpeed]=useState(5);
     useEffect(()=>{
@@ -26,9 +26,9 @@ const QuickSort=()=>{
     }
     
     const refresh=()=>{
-    setNumber(60);
+    setNumber(100);
     let cells=[];
-    for(let i=0;i<60;i++)cells.push({height:Math.floor(Math.random() * 200)+250,isSorted:false,isSorting:false});
+    for(let i=0;i<100;i++)cells.push({height:Math.floor(Math.random() * 200)+250,isSorted:false,isSorting:false});
     setBlocks(cells);
     }
     const quicksort=async ()=>{
